@@ -1,0 +1,28 @@
+{
+  "name": "yousers",
+  "version": "0.1.0",
+  "description": "yousers.cc site",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/movablecode/yousers.git"
+  },
+  "keywords": [
+    "lua",
+    "moonscript",
+    "react",
+    "postgresql",
+    "PostgREST",
+    "express",
+    "OpenResty"
+  ],
+  "author": "movablecode <sangmin.lna@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/movablecode/yousers/issues"
+  },
+  "homepage": "https://github.com/movablecode/yousers#readme"
+}

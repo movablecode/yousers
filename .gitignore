@@ -1,5 +1,6 @@
 # Compiled Lua sources
 luac.out
+*.lua
 
 # luarocks build files
 *.src.rock
@@ -39,3 +40,13 @@ luac.out
 *.x86_64
 *.hex
 
+# OpenResty files
+client_body_temp
+fastcgi_temp
+proxy_temp
+uwsgi_temp
+scgi_temp
+logs
+*.compiled
+
+# 
