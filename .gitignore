@@ -54,3 +54,6 @@ logs
 *.lock
 node_modules
 
+# LuaRocks
+lua_modules
+
