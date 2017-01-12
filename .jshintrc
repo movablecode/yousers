@@ -1,0 +1,13 @@
+{
+  "node": true,
+  "globals":{
+    "describe": false,
+    "it": false,
+    "GDATA": false,
+    "print": false,
+    "clearArray": false,
+    "isEmptyObject": false,
+    "getValidObject": false,
+    "_G":false
+  }
+}

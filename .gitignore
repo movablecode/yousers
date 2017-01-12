@@ -49,4 +49,8 @@ scgi_temp
 logs
 *.compiled
 
-# 
+# Node.js
+*.log
+*.lock
+node_modules
+
