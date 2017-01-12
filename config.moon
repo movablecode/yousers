@@ -3,8 +3,9 @@ import config from require "lapis.config"
 
 config {"development", "production"},->
   num_workers 1
-  num_connections 4*1024
+  num_connections 1*1024
   daemon_flag "on"
+  port 3102
 
   pcall ->
     include require "secret.keys"
@@ -16,7 +17,6 @@ config {"development", "production"},->
 
 
 config {"development"},->
-  port 3000
   code_cache "off"
   log_prefix "DEV_"
   postgres {
@@ -28,6 +28,7 @@ config {"development"},->
   }
 
 config "production",->
+  num_workers 1
   port 80
   code_cache "on"
   log_prefix "PROD_"
