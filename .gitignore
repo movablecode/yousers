@@ -52,6 +52,7 @@ logs
 # Node.js
 *.log
 *.lock
+dist
 node_modules
 
 # LuaRocks
