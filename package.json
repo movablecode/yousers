@@ -59,6 +59,7 @@
     "node-schedule": "^1.1.1",
     "passport": "^0.3.2",
     "pm2-webshell": "^1.24.0",
+    "preact": "^7.1.0",
     "pug": "^2.0.0-alpha8",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
