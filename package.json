@@ -47,7 +47,7 @@
     "gulp-mocha": "^2.2.0",
     "gulp-strip-comments": "^2.4.3",
     "gulp-stylus": "^2.5.0",
-    "gulp-uglify": "^1.5.4",
+    "gulp-uglify": "^2.0.1",
     "iconv": "^2.2.0",
     "iconv-lite": "^0.4.13",
     "jshint": "^2.9.2",

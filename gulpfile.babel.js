@@ -1,3 +1,4 @@
+import {exec} from 'child_process';
 import bc from 'babel-core/register';
 import gulp from 'gulp';
 import babel from 'gulp-babel';
@@ -46,19 +47,14 @@ let src_compile = (name,src_es6,dist_js)=>{
   });
 };
 
-// gulp.task('components', ()=> {
-//   gulp.src('src/components/*.jsx')
-//     .pipe(babel(babel_opt))
-//     .pipe(strip())
-//     .pipe(gulp.dest('dist/components'));
-// });
+gulp.task('moon', (cb)=> {
+  exec('./shell/compile_moon.sh', (err, stdout, stderr)=> {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+});
 
-// gulp.task('appjs', ()=> {
-//   gulp.src(appjs_list)
-//     .pipe(babel(babel_opt))
-//     .pipe(strip())
-//     .pipe(gulp.dest('static/js'));
-// });
 
 src_compile('components','src/components/*.jsx','dist/components');
 src_compile('appjs',appjs_list,'static/js');
@@ -70,4 +66,4 @@ gulp.task('test', ()=> {
     .pipe(mocha());
 });
 
-gulp.task('default', ['bundle','components','test']);
+gulp.task('default', ['bundle','components','moon', 'test']);
